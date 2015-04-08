@@ -27,7 +27,7 @@
 
 * Connect your TI Sensor to your windows 8 machine with bluetooth connectivity. Go to Settings -> Bluetooth -> You'll see SensorTag as a device to pair. Click on Pair. When asked for password, use 0. [0 is the default password for these sensor tags]. Once you see this sensor connected as a bluetooth device, you are all set to send data to your eventhub.
 
-* Run SensorTagToEventHub.exe from the list of files in DeploymentFiles folder that you copied from the github respository. 
+* Run SensorTagToEventHub.exe. It is an exe in the DeploymentFiles folder that you copied from the github respository. 
 
 * Click on "Send Data to Eventhub" button. If your TI sensor is connected properly to your windows 8 machine via bluetooth, this desktop app with start sending data to your eventhub. Note- To be on the safer side, please remove and re-pair the TI sensor to your windows 8 device everytime you start a new demo (esp. after your computer is waking up from sleep)
 
