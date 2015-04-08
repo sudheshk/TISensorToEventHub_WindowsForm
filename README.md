@@ -29,7 +29,7 @@
 
 * Run SensorTagToEventHub.exe. It is an exe in the DeploymentFiles folder that you copied from the github respository. 
 
-* Click on "Send Data to Eventhub" button. If your TI sensor is connected properly to your windows 8 machine via bluetooth, this desktop app with start sending data to your eventhub. Note- To be on the safer side, please remove and re-pair the TI sensor to your windows 8 device everytime you start a new demo (esp. after your computer is waking up from sleep)
+* Click on "Send Data to Eventhub" button. If your TI sensor is connected properly to your windows 8 machine via bluetooth, this desktop app will start sending data to your eventhub. Note- To be on the safer side, please remove and re-pair the TI sensor to your windows 8 device everytime you start a new demo (esp. after your computer is waking up from sleep)
 
 ### Create ASA Job and choose Power BI as output
 * On Azure Portal, choose Azure Stream Analytics service and quick create a new ASA job (choose name, region, monitoring storage account as necessary). 
