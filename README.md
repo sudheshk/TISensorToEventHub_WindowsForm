@@ -7,7 +7,7 @@
 
 * Windows Azure Account using Org Id (Power BI works with Org ID only. Org ID is your work or business email address e.g. xyz@mycompany.com. Personal emails like xyz@hotmail.com are not org ids. [You can learn more about org id here](https://www.arin.net/resources/request/org.html) )
 
-* An eventhub with a shared access key with "manage" permission. If you are not familiar new to EventHub, you can find [information on creating eventhub over here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-event-hubs-csharp-ephcs-getstarted/). Don't worry about how to send events to eventhub for this demo because the windows 8  desktop app created for this demo will help you do that. 
+* An eventhub with a shared access key with "manage" permission. If you are new to EventHub, you can find [information on creating eventhub over here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-event-hubs-csharp-ephcs-getstarted/). Don't worry about how to send events to eventhub for this demo because the windows 8  desktop app created for this demo will help you do that. 
 
 * Windows 8 laptop that can connect to TI sensor via bluetooth. 
   * Note- Windows 8 is NOT a requirement for Azure services. This is a requirement only for this particular Windows 8 desktop app used for this demo to read data from the TI sensor. This desktop app is just a quick and dirty app to demonstrate how can you send data from TI sensor to Azure Eventhub. You can write your own app on any platform to do the same. Azure eventhub developer guide can help you in that.
