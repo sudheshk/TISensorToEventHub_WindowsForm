@@ -38,7 +38,7 @@
 
 * Go to Output tab. If you are part of Power BI preview program, you'll see Power BI as an output option as below:
 
-  ![Power BI Output for ASA](https://www.flickr.com/photos/30097396@N08/16894243048/)
+  ![Power BI Output for ASA](/PowerBIOutput.PNG)
 
 * On selecting Power BI output, it'll ask you to authorize or signup for powerbi. At this time, you have to use the same org id that you used to create the ASA job. 
 
