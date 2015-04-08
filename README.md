@@ -15,7 +15,7 @@
 ### Sending data from TI Bluetooth sensor to Eventhub
 * Copy all the files from the [DeploymentFiles folder of this github repository](https://github.com/sudheshk/TISensorToEventHub_WindowsForm/tree/master/DeploymentFiles) to your local machine. If you want to take a look at source code and modify for your scenario, source code is available at the [SourceCode folder of the same github repository](https://github.com/sudheshk/TISensorToEventHub_WindowsForm/tree/master/SourceCode)
 * Change following configs in SensorTagToEventHub.exe.config config file for your Event Hub, Service Bus and access policy name and access key. As noted in the prerequisite section, this key should have "manage" permission on your eventhub:
-```sh
+```.net
   <appSettings>
     <add key="SBNameSpace" value="your service bus" />    [this is the namespace of your servicebus]
     <add key="EHName" value="your event hub" />  [This is the ame of your eventhub]
@@ -46,10 +46,10 @@
 
 * You don't need to pre-create this dataset and table in Power BI. ASA job will create them for you when the job runs and pushes the output to Power BI. Note- if there is no output from ASA Job, these datasets will not be created. 
 
-* Another point to note is that if you already have a dataset in Power BI with the name you specified with ASA job, ASA job will overwrite that dataset.
+* Another point to note is that if you already have a dataset in Power BI using the same name that you specified in your ASA job, ASA job will overwrite that dataset.
 
 * For the query of the job, I used following query. Feel free to modify for your scenario however make sure you are using proper columns names, inout, output alias. If you are using multiple outputs, ensure that you are using "SELECT...INTO..." syntax. Anyway, my query is:
-```sh
+```sql
 SELECT 
         max(hmdt) as hmdt ,
         max(temp) as temp ,
@@ -60,7 +60,7 @@ SELECT
         100 as maxHmdt ,
         70 as targetHmdt 
 FROM Input 
-WHERE dspl = 'Sensor Display Name'  --Put your sensor name that you are passing through the windows 8 desktop app for sending data to eventhub or just remove the where clause
+WHERE dspl = 'your sensor'  --Put your sensor name that you are passing through the windows 8 desktop app for sending data to eventhub or just remove the where clause
 Group by TUMBLINGWINDOW(ss,1) ,time ,dspl
 
  ```
