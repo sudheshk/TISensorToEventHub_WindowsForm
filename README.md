@@ -5,7 +5,7 @@
 
 * TI Sensor that connects to windows machine via Bluetooth. [Here is one link to buy this sensor](http://www.newark.com/texas-instruments/cc2541dk-sensor/dev-board-cc2541-2-4ghz-bluetooth/dp/55W6125?mckv=stpn1QPcu|pcrid|57087234021|plid|&CMP=KNC-GUSA-GEN-SHOPPING-TEXAS_INSTRUMENTS) (I am sure you can find it at other places too) 
 
-* Windows Azure Account using Org Id (Power BI works with Org ID only. Org ID is your work or business email address e.g. xyz@mycompany.com. Personal emails like xyz@hotmail.com are not org ids. [You can learn more about org id here](https://www.arin.net/resources/request/org.html)
+* Windows Azure Account using Org Id (Power BI works with Org ID only. Org ID is your work or business email address e.g. xyz@mycompany.com. Personal emails like xyz@hotmail.com are not org ids. [You can learn more about org id here](https://www.arin.net/resources/request/org.html) )
 
 * An eventhub with a shared access key with "manage" permission. If you are not familiar new to EventHub, you can find [information on creating eventhub over here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-event-hubs-csharp-ephcs-getstarted/). Don't worry about how to send events to eventhub for this demo because the windows 8  desktop app created for this demo will help you do that. 
 
