@@ -1,4 +1,7 @@
 # Azure Stream Analytics with Power BI 
+
+#buy a license
+
 #### *Building a Demo with TI Bluetooth sensor, Azure Stream Analytics & Power BI* 
 
 ### Prerequisites for this demo
